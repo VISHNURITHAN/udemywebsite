@@ -133,7 +133,22 @@ body{
    position: absolute;
    top: 10%;
    left: 10%;
+   animation-name: zoom;
+   animation-duration: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards;
 }
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
 .introimage__desc p{
 margin-top: 10px;
 }
