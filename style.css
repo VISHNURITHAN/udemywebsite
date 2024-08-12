@@ -13,6 +13,10 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .navbar__s1{
     display: flex;
@@ -35,6 +39,7 @@ body{
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: transparent;
 }
 .navbar__s2 input:focus{
     outline: none;
@@ -61,11 +66,85 @@ body{
 .navbar__s4__login{
     padding: 10px;
 }
+/*udemy business popup*/
+.Udemybusiness{
+    position: relative;
+    cursor: pointer;
+}
+.Udemybusiness__popup{
+    position: absolute;
+    width: 250px;
+    border: solid black 1px;
+    padding: 20px;
+    background-color: white;
+    top: 150%;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+.Udemybusiness__popup button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.Udemybusiness:hover .Udemybusiness__popup{
+    display: block;
+}
 
+/*Teach on udemy popup*/
+.Teachonudemy{
+    position: relative;
+    cursor: pointer;
+}
+.Teachonudemy__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 250px;
+    padding: 20px;
+    top :150%;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+.Teachonudemy__popup button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.Teachonudemy:hover .Teachonudemy__popup{
+    display: block;
+}
+
+.introimage {
+    position: relative;
+}
 .introimage img{
    
     width: 100%;
 }
+.introimage__desc{
+    background-color: wheat;
+   width: 35%;
+   padding: 2%;
+   border: solid black 2px;
+   position: absolute;
+   top: 10%;
+   left: 10%;
+}
+.introimage__desc p{
+margin-top: 10px;
+}
+.introimage__desc button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+
 .desc{
     padding: 10px;
     margin-top: 10px;
