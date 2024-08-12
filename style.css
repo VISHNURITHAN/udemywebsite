@@ -66,6 +66,10 @@ body{
 .navbar__s4__login{
     padding: 10px;
 }
+
+.navbar__s5{
+    display: none;
+}
 /*udemy business popup*/
 .Udemybusiness{
     position: relative;
@@ -205,9 +209,13 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 margin-top: 10px;
+gap: 10px; 
+margin: 5px;
 }
 .couse-card{
-    width: 300px;  
+    flex-grow: 1;
+    flex-basis: 20%; 
+       
 }
 .couse-card img{
     width: 100%;
@@ -233,9 +241,17 @@ margin-top: 10px;
 }
 .popular__container{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 10px;
+    gap: 10px; 
+    margin: 5px;
+
+}
+.popular__container img{
+    flex-basis: 20%;
+    flex-grow: 1;
+    
 }
 .footer{
     background-color: black;
@@ -254,6 +270,35 @@ margin-top: 10px;
     display: flex;
     align-items: center ;
     justify-content: space-between;
+}
+
+/*Media Quries*/
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+  .couse-card{
+    flex-basis: 40%;
+  }
+  .categories-session3{
+    display: none;
+  }
+  .navbar__s2,.navbar__s3,.navbar__s4{
+    display: none;
+  }
+  .navbar__s5{
+    display: block;
+  }
+  .categories-session2{
+    display: none;
+  }
+  .introimage__desc{
+    top: -8%;
+  }
 }
 
 
